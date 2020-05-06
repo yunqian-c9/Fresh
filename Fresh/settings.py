@@ -27,7 +27,7 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 SECRET_KEY = 'i9pl-l%&!&^+dh_x4l4jua)b6z!@+vcor)dwcksozgaj=3n_h#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -141,6 +141,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+# 指定收集静态文件的路径
+STATIC_ROOT = '/root/www/static'
 
 # 富文本编辑器配置
 TINYMCE_DEFAULT_CONFIG = {
